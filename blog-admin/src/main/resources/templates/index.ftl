@@ -65,6 +65,7 @@
         }
     </style>
 </@header>
+    <!--
 <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -99,6 +100,7 @@
         </div>
     </div>
 </div>
+-->
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12 top_tiles">
         <#-- 文章 -->
@@ -284,7 +286,7 @@
 <script src="/assets/js/zhyd.echarts.js"></script>
 <script>
     init_echarts();
-    $("#noticeModal").modal('show');
+    /*$("#noticeModal").modal('show');*/
     /* 顶部卡片统计 */
     $.post("/statistics/siteInfo", function (json) {
         $.alert.ajaxSuccess(json);
